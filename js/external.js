@@ -17,7 +17,7 @@ alert("My total price today is $" + totalPay)
 //Exercise 3 Question 2.
 //No of hours worked facebook = 10;
 //No of hours worked google = 6;
-//No of hours woked amazon = 4;
+//No of hours worked amazon = 4;
 fpays = 350.00;
 gPays = 400.00;
 aPays = 380.00;
@@ -28,10 +28,20 @@ var fullPay = (facebook * fpays) + (google * gPays) + (amazon * aPays)
 console.log(fullPay)
 alert("The total amount all companies paid is $" + fullPay)
 
+var classIsFull = confirm ("Is the class full?")
 
+var hasScheduleConflicts = confirm ("Do you have a class at 2:30 already?")
 
+alert("You can join the class is a " + (!classIsFull && !hasScheduleConflicts) + "statement.")
 
+var hasMoreThanTwoItems = confirm ("Are you buying more than two items?")
 
+var isOfferValid = confirm ("Is this offer still valid?")
 
+var isPremiumMember = confirm ("Are you a premium member?")
 
+var hasEnoughItems = hasMoreThanTwoItems || isPremiumMember
 
+var canUserUseOffer = (hasMoreThanTwoItems || isPremiumMember) && isOfferValid
+
+alert("You can use this offer is a " + canUserUseOffer + "statement.")
