@@ -45,3 +45,4 @@ var hasEnoughItems = hasMoreThanTwoItems || isPremiumMember
 var canUserUseOffer = (hasMoreThanTwoItems || isPremiumMember) && isOfferValid
 
 alert("You can use this offer is a " + canUserUseOffer + "statement.")
+
