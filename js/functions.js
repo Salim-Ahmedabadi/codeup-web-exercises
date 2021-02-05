@@ -1,5 +1,6 @@
+(function (){
 "use strict";
-
+var iffevar = "I m a local IFFE"
 /**
  * TODO:
  * Create a function called 'sayHello' that takes a parameter 'name'.
@@ -78,11 +79,16 @@ function calculateTip(a,b){
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
-var billAmount = prompt("Please enter bill amount");
-var billTip = prompt("Please enter tip percentage");
+var billAmount = Number(prompt("Please enter bill amount"));
+var billTip = Number(prompt("Please enter tip percentage"));
 alert("please tip: " + "$" + calculateTip(billAmount,billTip));
 
 
+//Alternate solution
+//function calculateTip (tipPercentage,billTotal);
+//    var tip = billTotal * tipPercentage;
+//    return tip;
+//    return billTotal * tipPercentage;
 /**
  * TODO:
  * Create a function named `applyDiscount`. This function should accept a price
@@ -105,6 +111,7 @@ function applyDiscount(k, d){
 }
 console.log(applyDiscount(500, 0.25));
 
+})();
 
 
 
