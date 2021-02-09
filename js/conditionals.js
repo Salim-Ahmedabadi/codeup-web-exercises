@@ -19,31 +19,25 @@
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
-//alert("Please pick  color");
-var color = prompt("Please enter a color of your choice: ");
-function analyzeColor(input) {
-    if (input === "blue") {
-        console.log("Blue is the color of the sky.");
-    } else if (input === "red") {
-        console.log("Strawberries are red.");
-    } else if (input === "cyan") {
-        console.log("I don't know anything about cyan.");
-    } else if (input === "green") {
-        console.log("Green is the color of grass.");
-    } else if (input === "orange") {
-        console.log("Orange is the color of citrus.");
-    } else if (input === "indigo") {
-        console.log("Indigo is one of the rainbow colors.");
-    } else if (input === "violet") {
-        console.log("Violet sounds like toilet.");
-    } else if (input === "yellow") {
-        console.log("Yellow is a dirty fellow.");
-    } else {
-        console.log("This color doesn't match my selected color");
+function analyzeColor(color){
+    if (color === "blue"){
+        return "blue is the color of the sky";
+    } else if (color === "red"){
+        return "Strawberries are red";
+    }else if (color === "orange"){
+        return "Oranges are orange";
+    }else if (color === "green"){
+        return "Grass is the color green";
+    }else if (color === "indigo"){
+        return "Rainbow has the color indigo";
+    }else if (color === "violet"){
+        return "Some roses are violet";
+    }else{
+        return "I don't know anything about " + color;
     }
 }
-
-analyzeColor(color);
+var returnofFunction = analyzeColor("violet");
+console.log(returnofFunction);
 
 // Don't change the next two lines!
 // These lines create two variables for you:
@@ -57,47 +51,25 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Pass the `randomColor` variable to your function and console.log the results.
  * You should see a different message every time you refresh the page
  */
-console.log("I picked: " + randomColor);
-analyzeColor(randomColor);
-
-
+console.log(analyzeColor(randomColor));
 /**
  * TODO:
  * Refactor your above function to use a switch-case statement
  */
+var message = console.log(analyzeColor(randomColor));
 
-function analyzeColor1(input){
-    switch (input){
+
+function analyzeColor(color){
+
+    switch (color){
         case "blue":
-            alert("Blue is the color of the sky")
-            break;
+            return "Blue is the color of the sky";
         case "red":
-            alert("Strawberries are red")
-            break;
-        case "cyan":
-            alert("I don't know anything about cyan.")
-            break;
-        case "green":
-            alert("Green is the color of grass")
-            break;
-        case "orange":
-            alert("Orange is the color of citrus.")
-            break;
-        case "indigo":
-            alert("Indigo is one of the rainbow colors.")
-            break;
-        case "violet":
-            alert("Violet sounds like toilet.")
-            break;
-        case "yellow":
-            alert("Yellow is a dirty fellow.")
-            break;
-        default:
-            alert("This color does not match my choice")
-            break;
+            return "Roses are red!"
+        default :
+            return "I dont know anything about " + color;
     }
 }
-analyzeColor1(randomColor);
 
 
 /**
@@ -106,8 +78,10 @@ analyzeColor1(randomColor);
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
-var userColor = prompt("What is my favorite color?");
-analyzeColor1(userColor);
+
+var userColor = prompt("Please pick a color.");
+
+alert(analyzeColor(userColor));
 
 /* ########################################################################## */
 
@@ -130,40 +104,40 @@ analyzeColor1(userColor);
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
-function calculateTotal(luckyNum, totalAmount) {
-    if (luckyNum === 1) {
-        var discountTotal = totalAmount - (totalAmount * .1);
-        alert("You received a 10% discount! Your total bill is now $" + discountTotal + "!");
-    } else if (luckyNum === 2) {
-        var discountTotal = totalAmount - (totalAmount * .25);
-        alert("You received a 25% discount! Your total bill is now $" + discountTotal + "!");
-    } else if (luckyNum === 3) {
-        var discountTotal = totalAmount - (totalAmount * .35);
-        alert("You received a 35% discount! Your total bill is now $" + discountTotal + "!");
-    } else if (luckyNum === 4) {
-        var discountTotal = totalAmount - (totalAmount * .5);
-        alert("You received a 50% discount! Your total bill is now $" + discountTotal + "!");
-    } else if (luckyNum === 5) {
-        alert("You received a 100% discount.!");
-    } else alert("Sorry, You get no discount " + totalAmount);
+function calculateTotal(luckyNumber,totalAmount){
 
+    var discount;
+
+
+    switch (luckyNumber){
+
+        case 0:
+            return totalAmount;
+
+        case 1:
+            discount = (totalAmount * .1);
+            return totalAmount - discount;
+
+        case 2:
+            discount = (totalAmount * .25);
+            return totalAmount - discount;
+
+        case 3:
+            discount = (totalAmount * .35);
+            return totalAmount - discount;
+
+        case 4:
+            discount = (totalAmount * .5);
+            return totalAmount - discount;
+
+        case 5:
+            return 0;
+    }
 
 }
-alert("The total bill is $100.git adddThe lucky number is 0");
-calculateTotal(0,100);
-alert("The total bill is still $100.The lucky number is now 1");
-calculateTotal(1,100);
-alert("The total bill is still $100.The lucky number is now 2");
-calculateTotal(2,100);
-alert("The total bill is still $100.The lucky number is now 3");
-calculateTotal(3,100);
-alert("The total bill is still $100.The lucky number is now 4");
-calculateTotal(4,100);
-alert("The total bill is still $100.The lucky number is now 5");
-calculateTotal(5,100);
 
-//alert("Now for more participation");
-var totalBill = parseFloat(prompt("How much is your Walmart bill?"));
+console.log(calculateTotal(3, 100));
+
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 6.
@@ -171,10 +145,15 @@ var totalBill = parseFloat(prompt("How much is your Walmart bill?"));
  * and alerts to display to the user what their lucky number was, what their
  * price before the discount was, and what their price after the discount is.
  */
-//Generate a random number between 0 and 6
+// Generate a random number between 0 and 6
 var luckyNumber = Math.floor(Math.random() * 6);
-alert("Your total bill is: " + totalBill + "Your lucky number is: " + luckyNumber);
-calculateTotal(luckyNumber, totalBill);
+var usersTotalBill = Number(prompt("What was your total bill?"));
+
+var discountedBill = calculateTotal(luckyNumber,usersTotalBill);
+
+alert("Your lucky number was " + luckyNumber);
+alert("Your price before the discount was $" + usersTotalBill + ", However with the discount you only have to pay $" + discountedBill + ".");
+
 /**
  * TODO:
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
@@ -191,3 +170,44 @@ calculateTotal(luckyNumber, totalBill);
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+function isEven(num){
+    return num % 2 === 0;
+}
+
+function isPositive(num){
+    return num > 0;
+}
+
+var userConfirmed = confirm("Would you like to enter a number?");
+
+if (userConfirmed){
+    // The user wants to play
+
+    var usersNumber = Number(prompt("Give me a number."));
+
+    console.log(usersNumber);
+
+    console.log(typeof usersNumber);
+
+    if (!isNaN(usersNumber)){
+
+
+        if(isEven(usersNumber)) {
+            alert("Your number is Even.")
+        } else {
+            alert("Your number is Odd.")
+        }
+
+        alert("Your number plus 100 is " + (100 + usersNumber));
+
+        var numberPosOrNeg = (isPositive(usersNumber)) ? "positive" : "negative";
+
+        alert("Your number is " + numberPosOrNeg + ".");
+
+    }else{
+        alert("Hey that is not a number!");
+    }
+
+}else{
+    // The user does not want to play
+}
