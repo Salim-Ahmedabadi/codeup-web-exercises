@@ -17,9 +17,19 @@ for( var i = 1 ; i <=10 ; i++){
     }
 }
 
-for (var i = 1; i <= 9; i++) {
+for (var i = 1; i <= 10; i--) {
     var string = i.toString()
-    var refactor = string.repeat(i)
-    var num = parseInt(refactor)
-    console.log(num)
+   var refactor = string.repeat(i)
+   var number = parseInt(refactor)
+    console.log(number)
+}
+// second way by using function
+function numberPyramid(){
+    for (var i = 1; i < 10; i++){
+        var output = "";
+        for (var j = 1;j <= i; j++){
+            output = output.concat(i);
+        }
+        console.log(output);
+    }
 }
