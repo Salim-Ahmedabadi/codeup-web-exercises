@@ -1,35 +1,31 @@
 
-function showMultiplicationTable () {
+function showMultiplicationTable (num) {
     for (var i = 1; i <= 10; i++) {
-        var result = i * 7;
-        console.log("7 * " + i + " = " + result);
+        console.log(num + " x " + i + " = " + (num * i))
     }
 
     }
-    showMultiplicationTable();
+    showMultiplicationTable(7);
 
 for( var i = 1 ; i <=10 ; i++){
     var random = Math.floor((Math.random() * (200 - 20 + 1) + 20));
     if(random % 2 === 0){
-        console.log(random + " is even");
+        console.log(random + " is even!");
     }else{
-        console.log( random  + " is odd");
+        console.log( random  + " is odd!");
     }
 }
 
-for (var i = 1; i <= 10; i--) {
-    var string = i.toString()
-   var refactor = string.repeat(i)
-   var number = parseInt(refactor)
-    console.log(number)
-}
-// second way by using function
-function numberPyramid(){
-    for (var i = 1; i < 10; i++){
-        var output = "";
-        for (var j = 1;j <= i; j++){
-            output = output.concat(i);
-        }
-        console.log(output);
+
+for (var outerLoop = 1; outerLoop <= 9; outerLoop++){
+    var output = "";
+    for (var innerLoop = 1; innerLoop <= outerLoop; innerLoop++) {
+        output = output + outerLoop;
     }
+        console.log(output);
+
+    }
+
+for ( i = 100; i >= 5; i -= 5){
+    console.log(i);
 }
