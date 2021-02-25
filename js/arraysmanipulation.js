@@ -159,13 +159,13 @@ var pies = [
 
 // splitting string into and array
 
-// var names = "Bob Sally Mary";
-//
-// var namesArr = names.split(" ");
-//
-// var namesString = namesArr.join("");
-//
-// console.log(namesString);
+var names = "Bob Sally Mary";
+
+var namesArr = names.split(" ");
+
+var namesString = namesArr.join("");
+
+console.log(namesString);
 
 // splitting on an empty string
 
