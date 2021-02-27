@@ -19,7 +19,8 @@
 
     }
     };
-console.log(person.sayHello());
+
+    console.log(person.sayHello());
 
     /**
      * TODO:
@@ -144,10 +145,11 @@ shoppers.forEach(function(shopper) {
      */
 
         books.forEach(function(book, i){
-            console.log("Book " + (i + 1));
+            console.log("Book # " + (i + 1));
             console.log("Title: " + book.title);
             console.log("Author: " + book.author.firstName + " " + book.author.lastName);
             console.log("Year: " + book.year);
+            console.log("---")
 
     });
     /**
