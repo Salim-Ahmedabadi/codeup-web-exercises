@@ -22,8 +22,8 @@ console.log(sayHello("Salim"));
  * console.log 'helloMessage' to check your work
  */
 
-var helloMessage = sayHello("Aisha");
-console.log(helloMessage);
+    var helloMessage = sayHello("Aisha");
+    console.log(helloMessage);
 
 /**
  * TODO:
