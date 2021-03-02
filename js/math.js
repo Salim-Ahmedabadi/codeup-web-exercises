@@ -1,4 +1,4 @@
-console.log("Salim");
+
 
 function getRandomInt(min, max) {
     min = Math.ceil(min);
