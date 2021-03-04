@@ -5,26 +5,29 @@
     <title>Register With Us</title>
 </head>
 <body>
-<form method="GET" action="https://request-inspector.glitch.me/">
+<form method="POST" action="https://request-inspector.glitch.me/">
     <label>
         Email
-    <input type="email" name="email">
+    <input type="email" name="email" id="email" placeholder="some@example.com">
     </label>
     <br>
     <label>
         Password
-    <input type="password" name="password">
-
+    <input type="password" name="password" id="password" placeholder="EnterPasword">
+    <br>
     </label>
     <br>
-    <textarea name="Bio"></textarea>
+    <label>
+        Bio
+    <textarea name="Bio" id="Bio" cols="30" rows="10" placeholder="Add somrthing about yourself"></textarea>
+    </label>
     <br>
 
     <br>
-    Billboard <input type="radio" name="How did you hear about us?" value="a"><br>
-    Internet Advertisement <input type="radio" name="How did you hear about us?" value="b"><br>
-    Radio Advertisemnt<input type="radio" name="How did you hear about us?" value="c"><br>
-    Other<input type="radio" name="How did you hear about us?" value="d"><br>
+    Billboard <input type="radio" name="How did you hear about us?" value="Billboard"><br>
+    Internet <input type="radio" name="How did you hear about us?" value="Internet Advertisement"><br>
+    Radio <input type="radio" name="How did you hear about us?" value="Internet Radio"><br>
+    Other<input type="radio" name="How did you hear about us?" value="Other"><br>
     <br>
     <select name="Browser">
         <option value="Google">Chrome</option>
