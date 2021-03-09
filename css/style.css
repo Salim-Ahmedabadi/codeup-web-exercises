@@ -1,8 +1,6 @@
-.fancy-header {
-    background-color: antiquewhite;
-    color: purple;
-    text-decoration: underline;
-    text-decoration-style: solid;
-
-
+body{
+    background-image:url("..img/photo-1541791135449-168d91a780a1.jpeg");
+    text-decoration-line: underline;
 }
+
+
