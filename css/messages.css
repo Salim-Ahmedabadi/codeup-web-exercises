@@ -1,3 +1,9 @@
+:root {
+    --blue: #c3d6f9;
+}
+
+
+
 body, html {
     height: 100%;
     width: 100%;
@@ -15,7 +21,7 @@ body, html {
 }
 
 .message-info{
-    background-color: #c3d6f9;
+    background-color: var(--blue);
     color: #4b3fa5;
 
 }
