@@ -27,18 +27,14 @@ a {
 }
 .top-nav {
     background: var(--light-bg);
-    position: fixed;
-    width: 100%;
-    z-index: 1;
+}
+.nav-item{
+    display:inline-block;
 }
 .nav {
     list-style-type: none;
     padding: 0;
     margin: 0;
-}
-.nav-item {
-    display: inline-block;
-    padding: 1.5em;
 }
 .nav-link {
     color: var(--main-link-color);
@@ -50,49 +46,6 @@ a {
 }
 .profile {
     background: var(--light-bg);
-    height: 80px;
-}
-.profile-image {
-    position: absolute;
-    top: 220px;
-}
-.profile-form {
-    line-height: 80px;
-    float: right;
-}
-.profile-details, .timeline,
-.who-to-follow {
-    float: left;
-    margin: 0 .5em;
-}
-.profile-details, .who-to-follow {
-    width: calc(25% - 1em);
-}
-.timeline {
-    width: calc(50% - 1em);
-}
-.media {
-    width: 100%;
-    background-color: var(--light-bg);
-    border-bottom: 1px solid var(--separator-color);
-    padding: .5em;
-    overflow: auto;
-}
-.media-image {
-    max-width: 50px;
-    float: left;
-    margin-top: 1.33em;
-}
-.media-body {
-    float: left;
-    width: calc(100% - 50px);
-}
-.profile-items {
-    list-style: none;
-    padding: 0px;
-}
-.profile-entry {
-    margin: .5em;
 }
 .btn {
     border: 1px solid var(--main-link-color);
