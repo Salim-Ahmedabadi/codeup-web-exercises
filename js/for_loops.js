@@ -1,11 +1,10 @@
-
 function showMultiplicationTable (num) {
     for (var i = 1; i <= 10; i++) {
         console.log(num + " x " + i + " = " + (num * i))
     }
 
-    }
-    showMultiplicationTable(7);
+}
+showMultiplicationTable(7);
 
 for( var i = 1 ; i <=10 ; i++){
     var random = Math.floor((Math.random() * (200 - 20 + 1) + 20));
@@ -22,9 +21,9 @@ for (var outerLoop = 1; outerLoop <= 9; outerLoop++){
     for (var innerLoop = 1; innerLoop <= outerLoop; innerLoop++) {
         output = output + outerLoop;
     }
-        console.log(output);
+    console.log(output);
 
-    }
+}
 
 for ( i = 100; i >= 5; i -= 5){
     console.log(i);
