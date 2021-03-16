@@ -15,9 +15,9 @@ nav {
 }
 
  a {
-    display: inline-block;
+    /*display: inline-block;*/
     color: orangered;
-     text-decoration: none;
+    text-decoration: none;
     padding: 5px;
 }
 
@@ -31,12 +31,12 @@ nav {
     list-style: none;
     display: flex;
     justify-content: center;
-    flex: 1;
+
 }
 
  .logo {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2em;
+    font-size: 3em;
     padding: .2em 0;
 }
 
