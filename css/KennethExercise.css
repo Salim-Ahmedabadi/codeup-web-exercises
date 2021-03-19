@@ -1,43 +1,82 @@
+/*font-family: 'Raleway', sans-serif;
+** background color: black; font color: white
+** font: we found raleway to be closest
+** top container: flex, let's see what happens
+	** kill default styling on lists
+	** uppercase LOGO uppercase SLOGAN COMPANY
+** hr: slightly shorted in width! maybe 80%? Style it differently -
+** bottom container
+	** icon-container centered >
+		** spacing icons with space between? space evenly?
+		** Copyright aligned horizontally centered?*/
+
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    background-color: black;
+    color: white;
+}
+
 body {
-    margin: 0;
-    font-family: Helvetica;
-    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
 }
 
-main {
-    background-color: darkgray;
+h2 {
+    font-weight: bolder;
+}
+
+hr {
+    width: 90%;
+    margin: auto;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+.container {
     display: flex;
-    width: 100%;
-    height: 100vh;
+    flex-direction: column;
+
+}
+
+.top-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3em 0;
+}
+
+.top-container ul {
+    list-style: none;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.btm-container {
+    padding: 3em 0;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    border-top: 1px solid black;
-}
-
-main section {
-    display: flex;
-    justify-content: center;
-    border: 2px dotted #242E3F;
-    padding: 4em;
-    width: 50%;
-}
-
-.main-content {
-    width: 75%;
-}
-
-.flex-container {
-    background: #faebd7;
     width: 100%;
-    display: flex;
-    justify-content: flex-end;
 }
 
-.flex-item {
-    border-right: 4px double #242E3F;
-    padding: 1em;
+.icon-container{
+    display: flex;
+    width: 33%;
+    justify-content: space-between;
+}
+
+.icon-container i {
+    font-size: 2.5em;
+}
+
+span {
+    font-size: smaller;
+    padding: 1em 0 0 0;
 }

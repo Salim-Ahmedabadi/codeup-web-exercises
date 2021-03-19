@@ -1,27 +1,80 @@
+<!--
+* 4 unordered lists - our link areas
+	** anchor tags for links
+* h3? logo? h4? sologan company?
+** icons running horizontally
+ ** maybe grouped together with copyright?
+** big container
+	** top-div
+		** logo > ULs
+	** horizontal rule (not full width - 80%~)
+		** let's style it differently ^^
+	** bottom-div
+	    ** 1 div - icons
+		** icons > fb, twitter, wifi, google, flickr
+		** copyright of some kind
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Flexbox Workshop</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/KennethExercie.css">
+    <title>Flexbox Footer Bonus</title>
+
+    <!--    First two links: loading up Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <!--    Last link: loading up Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="css/KennethExercise.css">
 </head>
 <body>
 
-<nav class="flex-container">
-    <div class="flex-item">Home</div>
-    <div class="flex-item">About Us</div>
-    <div class="flex-item">Contact Me</div>
-    <div class="flex-item">Testimonials</div>
-</nav>
+<div class="container">
 
-<main>
-    <section>
-        <div class="main-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad debitis dolore error excepturi id minus soluta! Ad beatae corporis dolorum est eum ipsam nulla, optio recusandae rem tenetur totam voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae illo impedit laborum, minus placeat quibusdam! Aliquam aut consectetur cum, dolorum ea excepturi ipsa labore libero nam praesentium quo sed sunt.
+    <div class="top-container">
+        <div class="logo-container">
+            <h2>LOGO</h2>
+            <h6>COOL SLOGAN</h6>
         </div>
-    </section>
-</main>
+        <ul>
+            <li>Codeup Themes</li>
+            <li>Pre-cohort FAQs</li>
+            <li>Submit an application</li>
+        </ul>
+        <ul>
+            <li>Services</li>
+            <li>Codeup Merchandise</li>
+        </ul>
+        <ul>
+            <li>Alumni</li>
+            <li>Success Stories</li>
+            <li>Our Team</li>
+        </ul>
+        <ul>
+            <li>About Codeup</li>
+            <li>Contact Codeup</li>
+            <li>Employer Partners</li>
+            <li>Resources</li>
+        </ul>
+    </div>
 
+    <hr>
+
+    <div class="btm-container">
+        <div class="icon-container">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-github"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-linkedin"></i>
+        </div>
+        <span>&copy;Copyright. All rights reserved. </span>
+    </div>
+
+</div>
 
 </body>
 </html>
