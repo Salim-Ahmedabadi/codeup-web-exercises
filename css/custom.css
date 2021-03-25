@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    text-align:center;
+}
+
+/* For extra small devices */
+@media screen and (max-width:768px) {
+    .hidden-xs {
+        display:none;
+    }
+}

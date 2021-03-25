@@ -37,7 +37,6 @@ hr {
     flex-direction: column;
     align-items: center; /* center on cross */
     justify-content: space-evenly; /* space on main */
-
     border: 1px solid black;
 }
 
