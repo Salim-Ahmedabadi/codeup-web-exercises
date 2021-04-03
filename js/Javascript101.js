@@ -193,5 +193,30 @@ function absoluteValue(num) {
 // Exercise 26
 // Write a function definition named isMultipleOfThree that takes in a number and returns true or false if the number is evenly divisible by 3.
 function isMultipleOfThree(num) {
-    return num % 3;
+    return num % 3 === 0;
+}
+// Exercise 27
+// Write a function definition named isMultipleOfFive that takes in a number and returns true or false if the number is evenly divisible by 5.
+function isMultipleOfFive(num) {
+    return num % 5 === 0;
+}
+//Exercise 28
+// Write a function definition named isMultipleOfBothThreeAndFive that takes in a number and returns true or false if the number is evenly divisible by both 3 and 5.
+function isMultipleOfBothThreeAndFive(num) {
+    return num % 3 === 0 && num % 5 === 0;
+}
+// Exercise 29
+// Write a function definition named square that takes in a number and returns the number times itself.
+function square(num) {
+    return num * num;
+}
+// Exercise 30
+// Write a function definition named add that takes in two numbers and returns the sum.
+function add(num1,num2) {
+    return num1 + num2;
+}
+// Exercise 31
+// Write a function definition named cube that takes in a number and returns the number times itself, times itself.
+function cube(num) {
+    return Math.pow(num, 3);
 }
