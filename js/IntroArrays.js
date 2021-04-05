@@ -161,9 +161,9 @@ for(var i = 0; i < shapes.length; i++){
 
 
 // TODO: Using a for loop, iterate through the instructors array and console.log each instructor
-// for(var i = 0; i < instructors.length; i++){
-// 	console.log(instructors[i]);
-// }
+ for(var i = 0; i < instructors.length; i++){
+ 	console.log(instructors[i]);
+ }
 
 // TODO: Using a for loop, iterate through the daysOfTheWeek array and console.log each day of the week
 for(var i = 0; i < daysOfTheWeek.length; i++){
