@@ -6,4 +6,6 @@
     $(document).ready(function() {
         $('.important').css('background-color', 'skyblue');
         $('.important').html('Salim Rocks');
+
+
     });
