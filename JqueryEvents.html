@@ -123,7 +123,18 @@
             - clicking on a paragraph will change the text to 'Howdy!'
             - hovering over the sub header makes the letters turn to uppercase while hovering over
         */
+        $('.box').dblclick(function(e) {
+            $('.box').css({'visibility': 'hidden'})
+        })
 
+        $('p').click(function(e){
+            $('p').css({'background-color': 'red'})
+            $('p').html('Howdy')
+            console.log(e);
+        })
+        $('h3').hover(function(e){
+            $(e.target).css('text-decoration', 'none');
+            $(e.target).html('text-transform', 'toUppercase');
     });
 
 </script>
