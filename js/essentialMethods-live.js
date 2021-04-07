@@ -37,6 +37,7 @@ $("h1").addClass("text-uppercase");
 
 //TODO Together: Can you assist me in removing the "bg-dark" background from our FOOTER?
 $(".footer").removeClass("bg-dark")
+
 //TODO: I have a custom css class known as hi-lite - .toggleClass() with a .click() would be a neat way to use it
 $("*").click(function(e){
     e.preventDefault();
@@ -48,11 +49,14 @@ $("*").click(function(e){
 //Bonus activity:
 
 //TODO: Create a variable to store HTML - use jQuery to get the entire nav element's inner HTML. Console.log your variable to confirm the contents.
+var navcontent = $("nav").html();
+console.log(navcontent);
 
 //TODO: Remove the class of bg-dark and navbar-dark from the <nav> with jQuery.
+ $("nav").removeClass("bg-dark, navbar-dark")
 
 //TODO: Add the class of navbar-light and bg-info from the <nav> with jQuery.
-
+$("nav").addClass("navbar-light, bg-info")
 //TODO: Finally, create the following - add your own button somewhere on the navbar. Add an event that will toggle the navbar between bg-dark/navbar-dark and bg-info/navbar-light respectively
 
 //TODO: Create your own object with multiple CSS properties you'd like to change. Change whatever element(s) you had in mind with your CSS object and .css()!
