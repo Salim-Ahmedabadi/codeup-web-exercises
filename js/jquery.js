@@ -1,14 +1,14 @@
-// $(document).ready(function () {
-//     console.log("fully loaded and ready to go!")
-// });
-//
-// console.log("hello jQuery!");
-//     $(document).ready(function() {
-//         $('.important').css('background-color', 'skyblue');
-//         $('.important').html('Salim Rocks');
-//
-//
-//     });
+$(document).ready(function () {
+    console.log("fully loaded and ready to go!")
+});
+
+console.log("hello jQuery!");
+    $(document).ready(function() {
+        $('.important').css('background-color', 'skyblue');
+        $('.important').html('Salim Rocks');
+
+
+    });
 $('h1').click(function(e){
     $('h1').css({'background-color': 'red'})
     $('h1').html('I just clicked it')

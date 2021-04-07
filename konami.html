@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>Konami Code</title>
+</head>
+<body>
+<h1>Konami Code</h1>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script>
+    "use strict";
+    var keys = [];
+    var konami = '38,38,40,40,37,39,37,39,66,65';
+
+    $(document).keydown(function(e){
+        keys.push( e.keyCode );
+        if ( keys.toString().indexOf( konami ) >=0 ){
+
+            keys = [];
+
+            //add silly music in background
+            $('body').css('background', 'red').append ('<img src="https://www.youtube.com></iframe>'); //ookay - star wars
+            //add &autoplay=1 at the end of the source link
+        }
+    });
+
+    $(document).keyup(function(event){
+        console.log(event.keyCode);
+    });
+</script>
+
+</body>
+</html>
+<!--The Konami Code: Up, Up, Down, Down, Left, Right, Left, Right, B, A ( ↑ ↑ ↓ ↓ ← → ← → B A )-->
