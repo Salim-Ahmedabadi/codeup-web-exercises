@@ -1,6 +1,6 @@
 $(document).ready(function(){
     "use strict";
-    console.log("Intro to AJAX!");
+    // console.log("Intro to AJAX!");
     var car = {
         make: "Chrysler",
         model: "Pacifica",
@@ -110,7 +110,7 @@ $(document).ready(function(){
      */
 
     myBooks.fail(onFail);
-    // myBooks.fail(onFail);
+
 
     /*
      * TO DO TOGETHER: How about a function that always runs whether the request
@@ -125,20 +125,20 @@ $(document).ready(function(){
      * "Something wrong with your request..." if it fails.
      */
 
-    // var swapiFilmsRequest = $.ajax(swapiBaseURL + "films/");
-    //
-    // swapiFilmsRequest.fail(function() {
-    //    console.log("Failed to load films.");
-    // });
+    var swapiFilmsRequest = $.ajax(swapiBaseURL + "films/");
+
+    swapiFilmsRequest.fail(function() {
+       console.log("Failed to load films.");
+    });
 
     /*
      * TO DO: Refactor your Star Wars API request to log a message that says
      * "...loading" whether the request fails or not.
      */
 
-    // swapiFilmsRequest.always(function(){
-    //     console.log('Loading Star Wars films........')
-    // })
+    swapiFilmsRequest.always(function(){
+        console.log('Loading Star Wars films........')
+    })
 
 
     /*
@@ -149,17 +149,17 @@ $(document).ready(function(){
 
 
 
-    // var newHopeSwapiRequest = $.ajax(swapiBaseURL + 'films/', {
-    //     method: 'GET',
-    //     data: {
-    //         search: 'A New Hope'
-    //     }
-    // });
-    //
-    // newHopeSwapiRequest.done(function(data){
-    //     console.log(data);
-    //     console.log(data.results[0].director);
-    // });
+    var newHopeSwapiRequest = $.ajax(swapiBaseURL + 'films/', {
+        method: 'GET',
+        data: {
+            search: 'A New Hope'
+        }
+    });
+
+    newHopeSwapiRequest.done(function(data){
+        console.log(data);
+        console.log(data.results[0].director);
+    });
 
     /*
      * TO DO: Create a new variable that makes a similar request. Search for
@@ -167,11 +167,11 @@ $(document).ready(function(){
      */
 
 
-    // var newHopeSwapiRequest = $.ajax(swapiBaseURL + 'films/1/');
-    //
-    // newHopeSwapiRequest.done(function(data){
-    //     console.log(data.director);
-    // });
+    var newHopeSwapiRequest = $.ajax(swapiBaseURL + 'films/1/');
+
+    newHopeSwapiRequest.done(function(data){
+        console.log(data.director);
+    });
 
     /*
      * TO DO: Make a request to books.json. Return the author of "The
