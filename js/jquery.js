@@ -4,7 +4,7 @@ $(document).ready(function () {
 
 console.log("hello jQuery!");
     $(document).ready(function() {
-        $('.important').css('background-color', 'skyblue');
+        $('.important').css('background-color', 'yellow');
         $('.important').html('Salim Rocks');
 
 
