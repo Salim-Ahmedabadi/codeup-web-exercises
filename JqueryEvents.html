@@ -53,60 +53,60 @@
         // Event Handler / Listener Function Review from JavaScript
 
         // with anon function
-        // var mainContainer = document.ElementById('container');
-        //
-        // mainContainer.addEventListener('click', function(e){
-        //     console.log(e);
-        // });
+        var mainContainer = document.ElementById('container');
+
+        mainContainer.addEventListener('click', function(e){
+            console.log(e);
+        });
 
 
         // with defined handler
 
-        // var mainContainer = document.ElementById('container');
-        //
-        // function clickHandler(e) {
-        //     console.log(e);
-        // }
-        // mainContainer.addEventListener('click', clickHandler)
+        var mainContainer = document.ElementById('container');
+
+        function clickHandler(e) {
+            console.log(e);
+        }
+        mainContainer.addEventListener('click', clickHandler)
 
         // jQuery with anon function
 
-        // $('#container').click(function(e) {
-        //     console.log(e);
-        // }
+        $('#container').click(function(e) {
+            console.log(e);
+        })
 
 
 
 
         // jQuery with defined handler
-        // function clickHandler(e) {
-        //     console.log(e);
-        // }
-        // $('#container').click(clickHandler)
-        //
+        function clickHandler(e) {
+            console.log(e);
+        }
+        $('#container').click(clickHandler)
+
 
 
         // Double click and using "this" or "e.target"
 
-    // $('li').dblclick(function(e){
-    //     console.log(e);
-    //     console.log(this);
-    //     $(this).css('background', 'yellow');
-    // });
-    // function dblClickHandler(e) {
-    //     $(e.target).css('background', 'green')
-    // }
-    // $('li').dblclick(dblClickHandler);
+    $('li').dblclick(function(e){
+        console.log(e);
+        console.log(this);
+        $(this).css('background', 'yellow');
+    });
+    function dblClickHandler(e) {
+        $(e.target).css('background', 'green')
+    }
+    $('li').dblclick(dblClickHandler);
         // Hover
+        //
+        // SINGLE FUNCTION
+        $('.box').hover(function(e) {
+            console.log(e);
+            $(e.target).css('background', 'rebeccapurple')
+        });
 
-        //SINGLE FUNCTION
-        // $('.box').hover(function(e) {
-        //     console.log(e);
-        //     $(e.target).css('background', 'rebeccapurple')
-        // });
 
-
-        //TWO FUNCTIONS
+        // TWO FUNCTIONS
 
         $('.box').hover(function(e){
             console.log('enter');
@@ -135,7 +135,7 @@
         $('h3').hover(function(e){
             $(e.target).css('text-decoration', 'none');
             $(e.target).html('text-transform', 'toUppercase');
-    });
+    })
 
 </script>
 </body>
