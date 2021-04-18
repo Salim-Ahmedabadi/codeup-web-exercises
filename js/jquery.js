@@ -26,3 +26,7 @@ $('li').hover(function(e){
     // console.log('leave')
     $(e.target).css('background', 'black')
 })
+$('li').css({'font-size': '20px', 'background': 'yellow'});
+$('h1').css('background', 'yellow');
+$('p').css('background', 'yellow');
+alert($('h1').html());
