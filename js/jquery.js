@@ -20,9 +20,9 @@ $('p').dblclick(function(e){
     console.log(e);
 })
 $('li').hover(function(e){
-    console.log('enter');
+    // console.log('enter');
     $(e.target).css('background', 'red')
 },function(e){
-    console.log('leave')
+    // console.log('leave')
     $(e.target).css('background', 'black')
 })

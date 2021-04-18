@@ -220,3 +220,28 @@ function add(num1,num2) {
 function cube(num) {
     return Math.pow(num, 3);
 }
+// Exercise 32
+// Write a function definition named squareRoot that takes in a number and returns the square root of the provided number
+function squareRoot (num) {
+    return Math.sqrt(num);
+}
+// Exercise 33
+// Write a function definition named subtract that takes in two numbers and returns the first minus the second argument.
+function subtract (num1, num2) {
+    return num1 - num2;
+}
+// Exercise 34
+// Write a function definition named multiply that takes in two numbers and returns the first times the second argument.
+function multiply (num1, num2) {
+    return num1 * num2;
+}
+// Exercise 35
+// Write a function definition named divide that takes in two numbers and returns the first argument divided by the second argument.
+function divide (num1, num2) {
+    return num1 / num2;
+}
+// Exercise 36
+// Write a function definition named quotient that takes in two numbers and returns the quotient of dividing the first argument by the second argument.
+function quotient (num1, num2) {
+    return Math.floor(num1 / num2);
+}
