@@ -96,3 +96,14 @@ list += '</ul>';
 
 document.body.innerHTML = list;
 console.log(list);
+
+// const salesPeople = [
+//     {name: 'Jim Halpert', sales: 100},
+//     {name: 'Dwight Schrute', sales: 50},
+//     {name: 'Andy Bernard', sales: 150},
+// ];
+//
+// const totalSales = salesPeople.reduce((total, person) => {
+//     return total + person.sales;
+// }, 0);
+// console.log(salesPeople);
