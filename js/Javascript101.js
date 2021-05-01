@@ -274,3 +274,52 @@ function areaOfRectangle (width, length) {
 function areaOfCircle (radius) {
     return Math.PI * Math.pow(radius, 2);
 }
+// Exercise 42
+// Write a function definition named circumference that takes in a number representing a circle's radius and returns the circumference.
+function circumference (radius) {
+    return (2 * Math.PI) * radius;
+}
+// Exercise 43
+// Write a function definition named isVowel that takes in value and returns true if the value is a, e, i, o, u in upper or lower case.
+function isVowel (str) {
+    var noCase = str.toLowerCase();
+    return noCase === 'a' || noCase === 'e'|| noCase === 'i' || noCase === 'o' || noCase === 'u';
+}
+//Exercise 44
+// Write a function definition named hasVowels that takes in value and returns true if the string contains any vowels.
+function hasVowels(str) {
+    var vowels = 'aeiou';
+    var vcount = 0;
+    for (var x = 0; x < str.length; x++) {
+        if (vowels.toLowerCase().indexOf(str[x]) !== -1) {
+            vcount++;
+        }
+    }
+    return vcount > 0;
+}
+// Exercise 45
+// Write a function definition named countVowels that takes in value and returns the count of the nubmer of vowels in a sequence.
+
+function countVowels (str) {
+    var vowels = 'aeiou';
+    var vcount = 0;
+    for (var x = 0; x < str.length; x++) {
+        if (vowels.toLowerCase().indexOf(str[x]) !== -1) {
+            vcount++;
+        }
+    }
+    return vcount;
+}
+// Exercise 46
+// Write a function definition named removeVowels that takes in string and returns the string without any vowels
+
+function removeVowels (str) {
+    var newStr = "";
+    for (var x = 0; x < str.length; x++) {
+        if (!isVowel(str[x])) {
+            newStr += str[x]
+        }
+    }
+    console.log(newStr)
+    return newStr;
+}
