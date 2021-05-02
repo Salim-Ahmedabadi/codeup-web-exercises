@@ -323,3 +323,43 @@ function removeVowels (str) {
     console.log(newStr)
     return newStr;
 }
+// Exercise 47
+// Write a function definition named startsWithVowel that takes in string and true if the string starts with a vowel
+function startsWithVowel (str) {
+    if(!isVowel(str[0])){
+        return false;
+    }else {
+        return true;
+    }
+}
+// Exercise 48
+// Write a function definition named endsWithVowel that takes in string and true if the string ends with a vowel
+function endsWithVowel (str) {
+    var newStr = str.split("");
+    var reverseArray = newStr.reverse();
+    var jString = reverseArray.join("");
+    if(!isVowel(jString[0])){
+        return false;
+    }else {
+        return true;
+    }
+}
+// Exercise 49
+// Write a function definition named startsAndEndsWithVowel that takes in string and returns true if the string starts and ends with a vowel
+function startsAndEndsWithVowel(str) {
+    if(!startsWithVowel(str[0]) && !endsWithVowel(str[0])){
+        return false;
+    }else {
+        return true;
+    }
+}
+//Exercise 50
+// Write a function definition named first that takes in sequence and returns the first value of that sequence.
+function first (input) {
+    return input[0];
+}
+// Exercise 51
+// Write a function definition named second that takes in sequence and returns the second value of that sequence.
+function second (input) {
+    return input[1];
+}
