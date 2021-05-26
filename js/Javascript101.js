@@ -363,3 +363,48 @@ function first (input) {
 function second (input) {
     return input[1];
 }
+// Exercise 52
+// Write a function definition named third that takes in sequence and returns the third value of that sequence.
+function third (input) {
+    return input[2];
+}
+// Exercise 53
+// Write a function definition named forth that takes in sequence and returns the forth value of that sequence.
+function forth (input) {
+    return input[3];
+}
+// Exercise 54
+// Write a function definition named last that takes in sequence and returns the last value of that sequence.
+function last( input) {
+    var newArr = [];
+    if(typeof input === "string"){
+        newArr = input.split("")
+    }else if(Array.isArray(input)){
+        newArr = input
+    }
+    return newArr.pop()
+}
+// Exercise 55
+// Write a function definition named secondToLast that takes in sequence and returns the second to last value of that sequence.
+function secondToLast( input) {
+    if(typeof input === 'string'){
+        var newArr = input.split("")
+        var newArrReverse = newArr.reverse()
+
+    }else if (Array.isArray(input)){
+        var newArrReverse = input.reverse()
+    }
+    return newArrReverse [1];
+}
+// Exercise 56
+// Write a function definition named thirdToLast that takes in sequence and returns the third to last value of that sequence.
+function thirdToLast( input) {
+    if(typeof input === 'string'){
+        var newArr = input.split("")
+        var newArrReverse = newArr.reverse()
+
+    }else if (Array.isArray(input)){
+        var newArrReverse = input.reverse()
+    }
+    return newArrReverse [2];
+}
