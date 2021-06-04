@@ -408,3 +408,18 @@ function thirdToLast( input) {
     }
     return newArrReverse [2];
 }
+// Exercise 57
+// Write a function definition named firstAndSecond that takes in sequence and returns the first and second value of that sequence as an array
+function firstAndSecond (input) {
+    return input.slice(0,2)
+}
+// Exercise 58
+// Write a function definition named firstAndLast that takes in sequence and returns the first and last value of that sequence as an array
+function firstAndLast (arr) {
+    var newArr = [];
+    var arrShift = arr.shift();
+    newArr.push(arrShift);
+    arrShift = arr.pop();
+    newArr.push(arrShift);
+    return newArr;
+}
