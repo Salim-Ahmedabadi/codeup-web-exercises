@@ -423,3 +423,12 @@ function firstAndLast (arr) {
     newArr.push(arrShift);
     return newArr;
 }
+// Exercise 59
+// Write a function definition named firstToLast that takes in sequence and returns the sequence with the first value moved to the end of the sequence.
+function firstToLast (input) {
+    var newArr = [];
+    var arrShift = input.shift()
+    console.log(arrShift)
+    input.push(arrShift)
+    return input;
+}
