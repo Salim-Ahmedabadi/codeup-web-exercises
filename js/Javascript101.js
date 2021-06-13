@@ -441,3 +441,12 @@ function sumAll (arr) {
     });
     return count;
 }
+//  Exercise 61
+//  Write a function definition named mean that takes in sequence of numbers and returns the average value
+function mean (arr) {
+    var count = 0;
+    arr.forEach(function(num){
+        count += num
+    });
+    return count / arr.length
+}
