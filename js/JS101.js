@@ -463,3 +463,4 @@ function median(values) {
     else
         return (values[half-1] + values[half]) / 2.0;
 }
+function secondToLast(input)
