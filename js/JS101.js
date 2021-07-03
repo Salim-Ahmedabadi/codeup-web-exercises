@@ -463,4 +463,12 @@ function median(values) {
     else
         return (values[half-1] + values[half]) / 2.0;
 }
-function secondToLast(input)
+// Exercise 60
+// Write a function definition named sumAll that takes in sequence of numbers and returns all the numbers added together.
+// function sumAll (arr) {
+//     var count = 0;
+//     arr.forEach(function(num){
+//         count += num
+//     });
+//     return count;
+// }
