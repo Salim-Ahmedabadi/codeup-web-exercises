@@ -472,3 +472,11 @@ function median(values) {
 //     });
 //     return count;
 // }
+// Exercise 66
+// Write a function definition named getSmallestNumber that takes in sequence of numbers and returns the smallest number.
+
+// Exercise 67
+// Write a function definition named onlyOddNumbers that takes in sequence of numbers and returns the odd numbers in an array.
+
+// Exercise 68
+// Write a function definition named onlyEvenNumbers that takes in sequence of numbers and returns the even numbers in an array.
