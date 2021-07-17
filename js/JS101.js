@@ -480,3 +480,9 @@ function median(values) {
 
 // Exercise 68
 // Write a function definition named onlyEvenNumbers that takes in sequence of numbers and returns the even numbers in an array.
+
+// Exercise 69
+// Write a function definition named onlyPositiveNumbers that takes in sequence of numbers and returns the positive numbers in an array.
+
+// Exercise 70
+// Write a function definition named onlyNegativeNumbers that takes in sequence of numbers and returns the negative numbers in an array.
